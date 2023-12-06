@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <title>Weather app</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prac.css">
+    <title>Document</title>
 </head>
 <body>
-
-    <input type="text" id="search" placeholder="Enter City Name">
+    <input type="text" id="search" placeholder="Enter City Name" value="Delhi">
     <button type="submit" id="Sumbit" onclick="getCity()" style="    width: 76px;
     height: 25px;
     border-radius: 20px;
     cursor: pointer;">Search</button>
     <div id="data">
         <div id="details">
-            <h2>City</h2>
-            <p>date time year</p>
-            <h1>32 °C</h1>
-            <h2>haze</h2>
-            <h4>temp_min °C / temp_max °C</h4>
+            <h2 id="city">City</h2>
+            <p id="date">date time year</p>
+            <h1 id="celcius">32 °C</h1>
+            <h2 id="condition">haze</h2>
+            <h4 id="minmaxtemp">temp_min °C / temp_max °C</h4>
             </div>
     </div>
-    
-    <script src="app.js"></script>
-
+    <script src="prac.js"></script>
 </body>
 </html>
