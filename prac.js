@@ -1,4 +1,4 @@
-var city = ""
+var city = "Delhi"
 var cityName = document.getElementById("city")
 var date = document.getElementById("date")
 var celcius = document.getElementById("celcius")
@@ -6,11 +6,13 @@ var condition = document.getElementById("condition")
 var minMaxTemp = document.getElementById("minmaxtemp")
 function getCity(){
     var cityName = document.getElementById("search").value
+    // console.log(cityName);
     city = cityName;
     console.log(city);
     weatherData()
 }
-async function weatherData(city="deoria"){
+getCity()
+async function weatherData(){
     const currentDate = new Date();
     const options = {
         weekday: 'long',
